@@ -1,3 +1,5 @@
+import {ReactElement} from "react";
+
 export type SPositionsType = {
   left: 'left'
   right: 'right'
@@ -18,3 +20,4 @@ export type SAppearancesType = {
   secondary: 'secondary'
   tertiary: 'tertiary'
 }
+export type SlotsType = Record<string, ReactElement>

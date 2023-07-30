@@ -1,6 +1,7 @@
 import React from 'react';
 import {SButton} from "shared/ui";
 import {FRemoveFromFriends} from "features/friends";
+import {WProfileCard} from "widgets/profile";
 
 const Index = () => {
 	return (
@@ -11,7 +12,7 @@ const Index = () => {
         Some test text
       </SButton>
 
-      <FRemoveFromFriends />
+      <WProfileCard />
 		</div>
 	);
 };

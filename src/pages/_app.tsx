@@ -1,6 +1,6 @@
 // DEBT: Подумать, как можно сделать так, чтобы не импортировать из app в pages layout
 
-import {BaseLayout} from "@/app/BaseLayout";
+import {BaseLayout} from "../app/layouts/base";
 import {ReactElement, ReactNode} from "react";
 import {AppProps} from "next/app";
 import {NextPage} from "next";
