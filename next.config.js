@@ -1,5 +1,6 @@
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin')
 
+// TODO: Добавить конфиг turbopack.
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
