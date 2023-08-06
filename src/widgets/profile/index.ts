@@ -1,1 +1,1 @@
-export {WProfileCard} from "@/widgets/profile/ui/WProfileCard";
+export { WProfileCard } from '@/widgets/profile/ui/WProfileCard'

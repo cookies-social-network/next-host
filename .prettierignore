@@ -1,0 +1,14 @@
+# Folders
+node_modules/
+public/
+dist/
+next/
+output
+.output
+
+# Files
+tsconfig.json
+
+# Extensions
+*.yaml
+*.conf

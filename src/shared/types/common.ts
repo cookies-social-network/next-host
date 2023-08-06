@@ -1,4 +1,4 @@
-import {ReactElement} from "react";
+import { ReactElement } from 'react'
 
 export type SPositionsType = {
   left: 'left'
@@ -15,9 +15,11 @@ export type SPositionCornersType = {
 }
 
 export type SPositionWithCornersType = SPositionsType & SPositionCornersType
+
 export type SAppearancesType = {
   primary: 'primary'
   secondary: 'secondary'
   tertiary: 'tertiary'
 }
+
 export type SlotsType = Record<string, ReactElement>

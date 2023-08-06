@@ -1,1 +1,1 @@
-export {renderSlot} from "shared/lib/utils/slots";
+export { renderSlot } from 'shared/lib/utils/slots'

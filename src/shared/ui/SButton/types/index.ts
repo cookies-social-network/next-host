@@ -1,3 +1,3 @@
-import {SPositionsType} from "shared/types";
+import { SPositionsType } from 'shared/types'
 
 export type SButtonPositionType = Pick<SPositionsType, 'left' | 'right'>

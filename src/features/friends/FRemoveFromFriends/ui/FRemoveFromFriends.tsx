@@ -1,7 +1,5 @@
-import {SButton} from "shared/ui";
+import { SButton } from 'shared/ui'
 
 export const FRemoveFromFriends = () => {
-  return (
-    <SButton>Добавить в друзья</SButton>
-  )
+  return <SButton>Добавить в друзья</SButton>
 }

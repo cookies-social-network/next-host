@@ -1,1 +1,1 @@
-export {FRemoveFromFriends} from "features/friends/FRemoveFromFriends/ui/FRemoveFromFriends";
+export { FRemoveFromFriends } from 'features/friends/FRemoveFromFriends/ui/FRemoveFromFriends'
