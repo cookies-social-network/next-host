@@ -1,21 +1,17 @@
-import React, {ReactNode} from "react";
+// DEBT: Подумать, как можно сделать так, чтобы не импортировать из app в pages layout
 
-const  RootLayout = ({ children }: { children: ReactNode }) => {
-	return (
-		<div>
-			header
-			{ children }
-		</div>
-	)
-}
+import { NextPage } from 'next'
+import { AppProps } from 'next/app'
+import { ReactElement, ReactNode } from 'react'
 
+import { BaseLayout } from 'app/layouts/base'
 
-export default function CNApplication({ Component, pageProps }: any) {
-	const renderWithLayout =
-		Component.getLayout ||
-		function (page: any) {
-			return <RootLayout>{page}</RootLayout>
-		}
+export type NextPageWithLayout = NextPage & { getLayout: (page: ReactElement) => ReactNode }
 
-	return renderWithLayout(<Component { ...pageProps } />)
+export type AppPropsWithLayout = AppProps & { Component: NextPageWithLayout }
+
+export default function CNApplication({ Component, pageProps }: AppPropsWithLayout) {
+  const renderWithLayout = Component.getLayout || ((page) => <BaseLayout>{page}</BaseLayout>)
+
+  return renderWithLayout(<Component {...pageProps} />)
 }

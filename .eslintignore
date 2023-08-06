@@ -1,0 +1,9 @@
+.gitignore
+
+node_modules/
+public/
+dist/
+.md
+.next
+output
+.output

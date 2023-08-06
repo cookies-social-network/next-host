@@ -20,7 +20,7 @@ coming soon...
 <h2 style="color: #83ff7a; font-weight: 500"> Запуск проекта: </h2>
 
 ```
-yarn — Установка зависимостей.
+yarn install --frozen-lockfile — Установка зависимостей.
 yarn dev — Локальная разработка.
 ```
 <hr />
