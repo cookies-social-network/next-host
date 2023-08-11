@@ -1,0 +1,27 @@
+.e-message-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__chat {
+    display: flex;
+    align-items: center;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  &__avatar-wrapper {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+  }
+
+  &__status {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}

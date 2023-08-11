@@ -15,6 +15,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'prettier',
     'plugin:prettier/recommended',
+    'next/core-web-vitals',
   ],
 
   globals: {
@@ -30,37 +31,37 @@ module.exports = {
         groups: [['builtin', 'external'], 'internal', 'parent', ['sibling', 'index']],
         pathGroups: [
           {
-            pattern: '@/app/**',
+            pattern: 'app/**',
             group: 'internal',
             position: 'before',
           },
           {
-            pattern: '@/process/**',
+            pattern: 'process/**',
             group: 'internal',
             position: 'before',
           },
           {
-            pattern: '@/pages/**',
+            pattern: 'pages/**',
             group: 'internal',
             position: 'before',
           },
           {
-            pattern: '@/widgets/**',
+            pattern: 'widgets/**',
             group: 'internal',
             position: 'before',
           },
           {
-            pattern: '@/features/**',
+            pattern: 'features/**',
             group: 'internal',
             position: 'before',
           },
           {
-            pattern: '@/entities/**',
+            pattern: 'entities/**',
             group: 'internal',
             position: 'before',
           },
           {
-            pattern: '@/shared/**',
+            pattern: 'shared/**',
             group: 'internal',
             position: 'before',
           },

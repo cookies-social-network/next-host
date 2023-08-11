@@ -1,6 +1,6 @@
-import React, { ReactNode } from 'react'
+import { ReactNode } from 'react'
 
-import { AuthLayout } from '@/app/layouts/auth'
+import { AuthLayout } from 'app/layouts/auth'
 
 export default function LoginPage() {
   return <h1>Login page</h1>

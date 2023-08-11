@@ -1,0 +1,20 @@
+// TODO: Продумать местонахождение этого файла.
+
+.home-page {
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__messages-divider {
+    width: 1px;
+    height: 100%;
+    margin: 0 24px;
+  }
+
+  &__groups {
+    display: grid;
+    gap: 20px;
+  }
+}

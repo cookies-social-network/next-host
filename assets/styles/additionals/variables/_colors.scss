@@ -1,0 +1,62 @@
+@use 'sass:color';
+
+$color--black: #000;
+$color--white: #fff;
+
+$color--btn-focused: #F845FC;
+
+$color--red: #E30613;
+$color--light-red: color.mix($color--red, $color--white, $weight: 10%);
+$color--yellow: #FFED00;
+$color--light-yellow: color.mix($color--yellow, $color--white, $weight: 10%);
+$color--green: #439F6E;
+$color--light-green: color.mix($color--green, $color--white, $weight: 10%);
+$color--medium-green: #C7ECEC;
+
+$color--blue-1: #24366E;
+$color--blue-2: #164696;
+$color--blue-3: #235FC2;
+$color--blue-4: #7C86A8;
+$color--blue-5: #C7C7EC;
+$color--blue-6: #E5E5F4;
+$color--blue-7: #F7F7FD;
+
+$color--grey-1: #3D3D3D;
+$color--grey-2: #666;
+$color--grey-3: #A4A4A4;
+$color--grey-4: #C8C8C8;
+$color--grey-5: #F4F5F5;
+
+$color--message-success: #C7ECEC;
+$color--message-error: #FFBEBE;
+$color--message-warning: #FFE4B0;
+$color--message-info: #E5E5F4;
+
+$colors: (
+  black: $color--black,
+  white: $color--white,
+  btn-focused: $color--btn-focused,
+  red: $color--red,
+  light-red: $color--light-red,
+  yellow: $color--yellow,
+  light-yellow: $color--light-yellow,
+  green: $color--green,
+  light-green: $color--light-green,
+  medium-green: $color--medium-green,
+  blue-1: $color--blue-1,
+  blue-2: $color--blue-2,
+  blue-3: $color--blue-3,
+  blue-4: $color--blue-4,
+  blue-5: $color--blue-5,
+  blue-6: $color--blue-6,
+  blue-7: $color--blue-7,
+  grey-1: $color--grey-1,
+  grey-2: $color--grey-2,
+  grey-3: $color--grey-3,
+  grey-4: $color--grey-4,
+  grey-5: $color--grey-5,
+  message-success: $color--message-success,
+  message-error: $color--message-error,
+  message-warning: $color--message-warning,
+  message-info: $color--message-info,
+)

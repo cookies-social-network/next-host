@@ -1,0 +1,11 @@
+.e-chat-group {
+  width: 100%;
+  border: 2px solid var(--color-green);
+  border-radius: 4px;
+  padding: 12px 24px;
+
+  @include responsive(lg) {
+    width: 230px;
+    height: 110px;
+  }
+}

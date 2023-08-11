@@ -6,6 +6,8 @@ import { ReactElement, ReactNode } from 'react'
 
 import { BaseLayout } from 'app/layouts/base'
 
+import 'assets/styles/index.scss'
+
 export type NextPageWithLayout = NextPage & { getLayout: (page: ReactElement) => ReactNode }
 
 export type AppPropsWithLayout = AppProps & { Component: NextPageWithLayout }
