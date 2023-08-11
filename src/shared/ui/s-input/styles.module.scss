@@ -1,0 +1,16 @@
+.s-input {
+  padding: 8px 12px;
+
+  &__wrapper {
+    padding: 4px;
+  }
+
+  &__inner {
+    font-size: var(--font-size-md);
+    background-color: var(--color-blue-5);
+
+    &::placeholder {
+      color: var(--color-grey-2);
+    }
+  }
+}

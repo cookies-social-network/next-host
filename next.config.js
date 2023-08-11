@@ -1,3 +1,4 @@
+const path = require('path')
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin')
 
 /** @type {import('next').NextConfig} */
@@ -11,6 +12,12 @@ const nextConfig = {
   swcMinify: true,
   images: {
     domains: ['localhost'],
+  },
+  sassOptions: {
+    includePaths: [path.join(__dirname, './assets/styles')],
+    prependData:
+      // eslint-disable-next-line max-len
+      '@use "@@/assets/styles/additionals/mixins/index.scss" as *; @use "@@/assets/styles/additionals/variables/index.scss" as *;',
   },
   webpack: (config) => {
     config.module.rules.push({

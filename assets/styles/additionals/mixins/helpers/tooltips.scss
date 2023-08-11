@@ -1,0 +1,14 @@
+@mixin compareFavoriteMixin {
+  &__tooltip {
+    .content {
+      font-size: var(--font-size--sm);
+      color: var(--color-tooltip-text);
+      padding: 4px;
+    }
+
+    &.el-popper {
+      border: none;
+      border-radius: 4px;
+    }
+  }
+}

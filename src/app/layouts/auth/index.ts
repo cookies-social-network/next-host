@@ -1,1 +1,1 @@
-export { AuthLayout } from 'app/layouts/auth/ui/AuthLayout'
+export { AuthLayout } from 'app/layouts/auth/ui'
