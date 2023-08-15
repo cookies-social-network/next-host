@@ -1,4 +1,4 @@
-import { FC, ReactNode } from 'react'
+import { ReactNode } from 'react'
 
 import { renderSlot } from 'shared/lib/utils'
 import { SlotsType } from 'shared/types'
@@ -8,7 +8,7 @@ interface IProps {
   children?: ReactNode
 }
 
-export const EProfileCard: FC<IProps> = ({ slots }) => {
+export const EProfileCard = ({ slots }: IProps) => {
   return (
     <div>
       Profile

@@ -1,4 +1,4 @@
-import { FC, ReactElement, ReactNode } from 'react'
+import { ReactElement, ReactNode } from 'react'
 
 import { SAppearancesType } from 'shared/types'
 import { SButtonPositionType } from 'shared/ui/s-button/types'
@@ -10,7 +10,7 @@ interface IProps {
   children?: ReactNode
 }
 
-export const SButton: FC<IProps> = ({ appearance = 'primary', icon, children }) => {
+export const SButton = ({ appearance = 'primary', icon, children }: IProps) => {
   return (
     <>
       {appearance}
