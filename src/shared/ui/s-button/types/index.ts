@@ -1,3 +1,3 @@
 import { SPositionsType } from 'shared/types'
 
-export type SButtonPositionType = Pick<SPositionsType, 'left' | 'right'>
+export type SButtonPositionType = Exclude<SPositionsType, 'top' | 'bottom'>

@@ -4,7 +4,7 @@ import { SAppearancesType } from 'shared/types'
 import { SButtonPositionType } from 'shared/ui/s-button/types'
 
 interface IProps {
-  appearance?: keyof SAppearancesType
+  appearance?: SAppearancesType
   icon?: ReactElement
   iconPosition?: SButtonPositionType
   children?: ReactNode
