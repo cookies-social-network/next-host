@@ -7,11 +7,8 @@ interface IProps {
   className?: string
 }
 
-// TODO: Изменить стиль написания классов.
-// TODO: Исправить класс `reverse`
 export const SIcon = ({ className = '', name, reverse = false }: IProps) => {
-  const isReverse = reverse ? 'reverse' : ''
-  const classes = `${styles['s-icon']} ${className} ${isReverse}`
+  const classes = `${styles['s-icon']} ${className} ${reverse ? styles['reverse'] : ''}`
 
   return (
     <svg xmlns="http://www.w3.org/2000/svg" className={classes} width="1em" height="1em" aria-hidden="true">
