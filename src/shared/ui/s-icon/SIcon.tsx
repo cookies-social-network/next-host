@@ -8,6 +8,7 @@ interface IProps {
 }
 
 // TODO: Изменить стиль написания классов.
+// TODO: Исправить класс `reverse`
 export const SIcon = ({ className = '', name, reverse = false }: IProps) => {
   const isReverse = reverse ? 'reverse' : ''
   const classes = `${styles['s-icon']} ${className} ${isReverse}`
