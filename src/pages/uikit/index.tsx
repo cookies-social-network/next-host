@@ -4,6 +4,8 @@ import { WProfileCard } from 'widgets/profile/w-profile-card'
 
 import { SButton, SInput } from 'shared/ui'
 
+import { SIcon } from '@/shared/ui/s-icon/SIcon'
+
 const UiKit = () => {
   return (
     <div>
@@ -14,6 +16,8 @@ const UiKit = () => {
       <SInput label={'Email'} />
 
       <WProfileCard />
+
+      <SIcon className={'color-red'} name={'close'} />
     </div>
   )
 }
