@@ -20,6 +20,7 @@
   --line-height--secondary: 1.6;
   --el-color-danger: var(--color-red);
   --layout-padding-bottom: 40px;
+  --page-size: 40px;
 
   @include generate-color-root-variables;
   @include responsive(md) {
