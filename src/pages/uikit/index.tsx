@@ -11,8 +11,11 @@ const UiKit = () => {
     <div>
       <h1>UIkit</h1>
 
-      <SButton appearance={'primary'}>Some test text</SButton>
-
+      <div style={{ display: 'block', flexDirection: 'column' }}>
+        <SButton appearance={'primary'}>primary</SButton>
+        <SButton appearance={'secondary'}>secondary</SButton>
+        <SButton appearance={'tertiary'}>tertiary</SButton>
+      </div>
       <SInput label={'Email'} />
 
       <WProfileCard />

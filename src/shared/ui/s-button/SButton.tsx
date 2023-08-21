@@ -1,21 +1,27 @@
 import { ReactElement, ReactNode } from 'react'
 
-import { SAppearancesType } from 'shared/types'
-import { SButtonPositionType } from 'shared/ui/s-button/types'
+import { AppearancesType, ButtonViewType, SizeType } from 'shared/types'
+import styles from 'shared/ui/s-button/style.module.scss'
 
 interface IProps {
-  appearance?: SAppearancesType
+  appearance?: AppearancesType
+  disabled?: boolean
   icon?: ReactElement
-  iconPosition?: SButtonPositionType
+  prefixIcon?: ReactElement
+  postfixIcon?: ReactElement
   children?: ReactNode
+  asLink?: ButtonViewType
+  size?: SizeType
 }
 
-export const SButton = ({ appearance = 'primary', icon, children }: IProps) => {
+export const SButton = ({ appearance = 'primary', disabled = false, icon, children }: IProps) => {
   return (
     <>
       {appearance}
       {icon}
-      <button>{children}</button>
+      <button className={`${styles['s-button']}`} disabled={disabled}>
+        {children}
+      </button>
     </>
   )
 }
