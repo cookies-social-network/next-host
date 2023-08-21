@@ -35,7 +35,9 @@ const UiKit = () => {
 
       <WProfileCard />
 
-      <SIcon className={'color-red'} name={'close'} />
+      <SIcon className={'color-red mr-16'} name={'close'} />
+
+      <SIcon name={'check'} />
     </div>
   )
 }
