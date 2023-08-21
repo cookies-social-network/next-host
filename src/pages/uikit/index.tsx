@@ -4,6 +4,8 @@ import { WProfileCard } from 'widgets/profile/w-profile-card'
 
 import { SButton, SInput, SSlider } from 'shared/ui'
 
+import { SIcon } from '@/shared/ui/s-icon/SIcon'
+
 const UiKit = () => {
   const [value, setValue] = useState(1)
 
@@ -32,6 +34,8 @@ const UiKit = () => {
       </div>
 
       <WProfileCard />
+
+      <SIcon className={'color-red'} name={'close'} />
     </div>
   )
 }

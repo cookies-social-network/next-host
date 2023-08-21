@@ -5,8 +5,11 @@ import { AppProps } from 'next/app'
 import { ReactElement, ReactNode } from 'react'
 
 import { BaseLayout } from 'app/layouts/base'
+import { requireSvg } from 'app/plugins/requireSvg'
 
 import 'assets/styles/index.scss'
+
+requireSvg()
 
 export type NextPageWithLayout = NextPage & { getLayout: (page: ReactElement) => ReactNode }
 
