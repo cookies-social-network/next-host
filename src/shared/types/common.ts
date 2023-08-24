@@ -6,10 +6,6 @@ export type SPositionCornersType = 'top-left' | 'top-right' | 'bottom-left' | 'b
 
 export type SPositionWithCornersType = SPositionsType & SPositionCornersType
 
-export type AppearancesType = 'primary' | 'secondary' | 'tertiary'
-
 export type SlotsType = Record<string, ReactElement>
 
-export type ButtonViewType = 'default' | 'link'
-
-export type SizeType = number
+export type AppearancesType = 'primary' | 'secondary'

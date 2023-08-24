@@ -1,26 +1,41 @@
 import { ReactElement, ReactNode } from 'react'
 
-import { AppearancesType, ButtonViewType, SizeType } from 'shared/types'
 import styles from 'shared/ui/s-button/style.module.scss'
+import { ButtonAppearancesType, ButtonSizeType } from 'shared/ui/s-button/types'
 
 interface IProps {
-  appearance?: AppearancesType
+  appearance?: ButtonAppearancesType
   disabled?: boolean
   icon?: ReactElement
   prefixIcon?: ReactElement
   postfixIcon?: ReactElement
   children?: ReactNode
-  asLink?: ButtonViewType
-  size?: SizeType
+  loading?: boolean
+  size?: ButtonSizeType
 }
 
-export const SButton = ({ appearance = 'primary', disabled = false, icon, children }: IProps) => {
+export const SButton = ({
+  appearance = 'primary',
+  disabled = false,
+  icon,
+  prefixIcon,
+  postfixIcon,
+  children,
+  size = 'md',
+}: IProps) => {
+  const classes = `
+    ${styles['s-button']}
+    ${styles[`s-button--${appearance}`]}
+    ${styles[`s-button--${size}`]}
+    `.trim()
+
   return (
     <>
-      {appearance}
-      {icon}
-      <button className={`${styles['s-button']}`} disabled={disabled}>
+      <button className={classes} disabled={disabled}>
+        {prefixIcon}
+        {icon}
         {children}
+        {postfixIcon}
       </button>
     </>
   )

@@ -2,8 +2,9 @@ import React from 'react'
 
 import { WProfileCard } from 'widgets/profile/w-profile-card'
 
-import { SButton, SInput } from 'shared/ui'
+import { SInput } from 'shared/ui'
 
+import { SButton } from '@/shared/ui/s-button/SButton'
 import { SIcon } from '@/shared/ui/s-icon/SIcon'
 
 const UiKit = () => {
@@ -14,7 +15,7 @@ const UiKit = () => {
       <div style={{ display: 'block', flexDirection: 'column' }}>
         <SButton appearance={'primary'}>primary</SButton>
         <SButton appearance={'secondary'}>secondary</SButton>
-        <SButton appearance={'tertiary'}>tertiary</SButton>
+        <SButton disabled={true} icon={<SIcon name={'close'} />} />
       </div>
       <SInput label={'Email'} />
 
