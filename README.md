@@ -8,7 +8,7 @@
 
 <b>Тесты | [null](https://google.com/) </b>
 
-<b>State manager | [Effector](https://effector.dev/) </b>
+<b>State manager | [Effector](https://effector.dev/) </b>, [Logger](https://github.com/effector/logger)
 
 <b>Requests | [React Query V4](https://tanstack.com/query/latest/docs/react/overview) </b>
 
