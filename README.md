@@ -10,7 +10,7 @@
 
 <b>State manager | [Effector](https://effector.dev/), [Logger](https://github.com/effector/logger) </b>
 
-<b>Requests | [React Query V4](https://tanstack.com/query/latest/docs/react/overview) </b>
+<b>Requests | [React Query V4](https://tanstack.com/query/latest/docs/react/overview) OR [Farfetched](https://farfetched.pages.dev/tutorial/) OR Вообще без них</b>
 
 coming soon...
 
